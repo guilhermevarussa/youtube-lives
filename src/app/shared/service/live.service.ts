@@ -1,6 +1,7 @@
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { ResponseModel } from '../model/response-model';
 
 @Injectable({
   providedIn: 'root'
@@ -20,8 +21,8 @@ export class LiveService {
 
 
 
-    getLiveWithFlag(flag:string):Observable<Response>{
-      return this.httpClient.get<Response>(this.apiUrl+'?flag='+flag)
+    getLiveWithFlag(flag:string):Observable<ResponseModel>{
+      return this.httpClient.get<ResponseModel>(this.apiUrl+'?flag='+flag)
     }
 
 }
