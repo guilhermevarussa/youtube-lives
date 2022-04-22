@@ -12,12 +12,15 @@ import { LivesListComponent } from './views/home/lives-list/lives-list.component
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
+import {MatChipsModule} from '@angular/material/chips'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LivesListComponent
+    LivesListComponent,
+    LocalDateTimePipe
   ],
   imports: [
     HttpClientModule,
@@ -29,8 +32,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatTabsModule,
     MatCardModule,
+    MatChipsModule,
   ],
-  providers: [],
+  providers: [
+    LocalDateTimePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
