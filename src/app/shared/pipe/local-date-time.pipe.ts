@@ -7,7 +7,7 @@ import * as moment from 'moment';
 export class LocalDateTimePipe implements PipeTransform {
 
   transform(date: string): string {
-    let dateOut = moment.isMoment = moment(date,'YYYY-MM-DDTHH')
+    let dateOut = moment(date,'YYYY-MM-DDTHH')
     return dateOut.format('DD-MM-YYYY');
   }
 

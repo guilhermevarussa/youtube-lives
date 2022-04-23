@@ -15,7 +15,7 @@ export class LivesListComponent implements OnInit {
 
   constructor(
     public liveService: LiveService,
-    public satitizer: DomSanitizer) { }
+    public satitizer: DomSanitizer,) { }
 
   ngOnInit(): void {
     this.getLives()

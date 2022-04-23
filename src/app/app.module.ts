@@ -13,14 +13,20 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
-import {MatChipsModule} from '@angular/material/chips'
+import {MatChipsModule} from '@angular/material/chips';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FormDialogComponent } from './views/home/form-dialog/form-dialog.component'
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LivesListComponent,
-    LocalDateTimePipe
+    LocalDateTimePipe,
+    FormDialogComponent
   ],
   imports: [
     HttpClientModule,
@@ -33,6 +39,12 @@ import {MatChipsModule} from '@angular/material/chips'
     MatTabsModule,
     MatCardModule,
     MatChipsModule,
+    MatDialogModule,
+    MatNativeDateModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+  
   ],
   providers: [
     LocalDateTimePipe
