@@ -17,6 +17,13 @@
             <input matInput formControlName="liveLink" name="liveLink">
         </mat-form-field>
 
+        <mat-form-field class="form-fulliwhidth">
+            <mat-label>Data do video</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="liveDate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
     </form>
 </div>
 <div mat-dialog-actions>
