@@ -9,7 +9,7 @@ import { ResponseModel } from '../model/response-model';
 })
 export class LiveService {
 
-  apiUrl='http://localhost8080/lives';
+  apiUrl='http://localhost4200/lives';
   
   httpOptions = {
     headers:new HttpHeaders({
